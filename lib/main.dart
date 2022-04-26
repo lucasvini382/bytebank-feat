@@ -17,17 +17,35 @@ class Bytebank extends StatelessWidget {
           title: Text('Dashboard'),
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Image.asset('images/bytebank_logo.png'),
-            Container(
-              height: 100,
-              width: 150,
-              color: Colors.green,
-              child: Column(
-                children: <Widget>[
-                  Icon(Icons.people),
-                  Text('Contacts')
-                ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset('images/bytebank_logo.png'),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                padding: EdgeInsets.all(8.0),
+                height: 100,
+                width: 150,
+                color: Colors.green,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Icon(
+                      Icons.people,
+                      color: Colors.white,
+                      size: 32.0,),
+                    Text(
+                      'Contacts',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0),)
+                  ],
+                ),
               ),
             )
           ],
