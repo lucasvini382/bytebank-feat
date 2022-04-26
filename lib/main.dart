@@ -1,3 +1,4 @@
+import 'package:bytebank/screens/contact_form.dart';
 import 'package:bytebank/screens/contacts_list.dart';
 import 'package:bytebank/screens/dashboard.dart';
 import 'package:flutter/cupertino.dart';
@@ -26,7 +27,7 @@ class Bytebank extends StatelessWidget {
             textTheme: ButtonTextTheme.primary
         ),
       ),
-      home: Dashboard(),
+      home: ContactForm(),
     );
   }
 }
