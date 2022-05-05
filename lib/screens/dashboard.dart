@@ -2,8 +2,6 @@ import 'package:bytebank/screens/contacts_list.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {
-  const Dashboard({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +23,10 @@ class Dashboard extends StatelessWidget {
               child: InkWell(
                 onTap: () {
                   Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => ContactsList()));
+                    MaterialPageRoute(
+                      builder: (context) => ContactsList(),
+                    ),
+                  );
                 },
                 child: Container(
                   padding: EdgeInsets.all(8.0),
@@ -38,11 +39,14 @@ class Dashboard extends StatelessWidget {
                       Icon(
                         Icons.people,
                         color: Colors.white,
-                        size: 32.0,
+                        size: 24.0,
                       ),
                       Text(
                         'Contacts',
-                        style: TextStyle(color: Colors.white, fontSize: 16.0),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                        ),
                       )
                     ],
                   ),
