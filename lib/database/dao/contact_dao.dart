@@ -1,6 +1,6 @@
-import 'package:bytebank/models/contact.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:bytebank/database/app_database.dart';
+import '../../models/contact.dart';
+import '../app_database.dart';
 
 class ContactDao {
 
